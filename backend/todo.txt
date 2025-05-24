@@ -1,0 +1,5 @@
+controllo unicità prima dell'insert anche su tipologie ateenei e associazioni in modod da non bruciare gli id
+controllare gestione errori su tutte le tabelle
+controllare le associazioni
+armonizza il codice / o tutto inglese o tutto italiano
+il messaggio di successo delle associazioni deve essere più dettagliato (post)

@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_reach17
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: reach17
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./backend/migrations.sql:/docker-entrypoint-initdb.d/migrations.sql
+
+volumes:
+  mysql-data:
